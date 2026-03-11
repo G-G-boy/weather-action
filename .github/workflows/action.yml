@@ -26,4 +26,4 @@ jobs:
           subject: Guangzhou Weather Report (${{env.REPORT_DATE}})
           html_body: file://result.html
           to: ${{ secrets.MAIL_TO }}
-          from: GitHub Actions
+          from: 'GitHub Actions <${{ secrets.MAIL_FROM }}>'
